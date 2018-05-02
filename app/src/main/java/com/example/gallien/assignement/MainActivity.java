@@ -57,6 +57,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // On Click go to Picasso View
+        Button shw_picasso = findViewById(R.id.shw_img);
+        shw_picasso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_picasso = new Intent(MainActivity.this, show_img.class);
+                startActivity(intent_picasso);
+            });
+
+        });
+
     }
 
     public void loginIn(EditText email, EditText password) {
