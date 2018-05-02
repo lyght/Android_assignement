@@ -64,10 +64,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent_picasso = new Intent(MainActivity.this, show_img.class);
                 startActivity(intent_picasso);
-            });
-
+            }
         });
 
+        Button shwweb = findViewById(R.id.shw_web);
+        shwweb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_web = new Intent(MainActivity.this, show_web.class);
+                startActivity(intent_web);
+            }
+        });
     }
 
     public void loginIn(EditText email, EditText password) {

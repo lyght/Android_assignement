@@ -12,6 +12,6 @@ public class show_web extends AppCompatActivity {
         setContentView(R.layout.activity_show_web);
 
         WebView myWebView = (WebView) findViewById(R.id.webView);
-        myWebView.loadUrl("http://www.google.com");
+        myWebView.loadUrl("https://www.youtube.com/watch?v=37StRy0LEbI");
     }
 }
